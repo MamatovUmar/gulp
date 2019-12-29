@@ -95,13 +95,21 @@ gulp.task('build:html', () => {
         })
         .pipe(gulp.dest('build/'))
 });
+gulp.task('build:php', () => {
+    return gulp.src('src/php/**/*', {
+            dot: true,
+            allowEmpty: true
+        })
+        .pipe(gulp.dest('build/php'))
+});
 
 gulp.task('build', gulp.parallel(
     'build:css',
     'build:js',
     'build:images',
     'build:fonts',
-    'build:html'
+    'build:html',
+    'build:php',
 ));
 
 

@@ -1,6 +1,5 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-body {
-    background-color: green;
-    color: yellow;
-    transition: all .2s ease;
-}
+@import "mdi/materialdesignicons.scss";
+@import "components/font";
+@import "components/variables";
+@import "components/colors";

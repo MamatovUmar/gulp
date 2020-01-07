@@ -39,7 +39,7 @@ gulp.task('dev:js', () => {
 
 gulp.task('watch', () => {
     gulp.watch('src/scss/**/*.scss', gulp.series('dev:scss'));
-    gulp.watch('src/js/**/*.js', gulp.series('dev:js'));
+    gulp.watch('src/js/scripts.js', gulp.series('dev:js'));
 });
 
 gulp.task('default', gulp.series(

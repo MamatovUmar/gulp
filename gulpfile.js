@@ -56,10 +56,10 @@ gulp.task('default', gulp.series(
 
 gulp.task('build:css', () => {
     return gulp.src('src/css/*.css')
-        .pipe(rename('main.css'))
+        .pipe(rename('style.css'))
         .pipe(gulp.dest('./build/css'))
         .pipe(minifyCSS())
-        .pipe(rename('main.min.css'))
+        .pipe(rename('style.min.css'))
         .pipe(gulp.dest('./build/css'))
 });
 
